@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ATB.RPO.ITConfig.DomainModel.Entities.Security.Role">
+    <Position X="2.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABIAAAAAEAAAAAAAAAAAAAABAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Entities\Security\Role.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ManagersInRole" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ATB.RPO.ITConfig.DomainModel.Entities.Security.Manager">
+    <Position X="9.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAACAAAAAAAEAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Entities\Security\Manager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="RolesForManager" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

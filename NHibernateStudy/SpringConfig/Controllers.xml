@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <object type="ATB.RPO.NHibernateStudy.Controllers.ValuesController, NHibernateStudy" singleton="false">
+    <property name="Repository" ref="Repository" />
+  </object>
+
+  <object type="ATB.RPO.NHibernateStudy.Controllers.HomeController, NHibernateStudy" singleton="false">
+    <property name="Repository" ref="Repository" />
+  </object>
+
+  <!--- Объекты на запрос -->
+  <object name="Repository" type="ATB.RPO.NHibernateStudy.Models.DAL.NHibernate.ITConfig.Repository, NHibernateStudy" scope="request">
+  </object>
+
+  <!-- Объекты для приложения -->
+  <!--<object name ="CsharpDoc" type="ReportServer.WebUI.Models.CsharpDoc, ReportServer" scope="application" />
+    <object name ="NHibernateHelper" type="ReportServer.WebUI.Models.Repositories.NHibernateHelper, ReportServer" scope="application" />-->
+
+  <!--intentionally do NOT register the AccountController with the container; demonstrates that the underlying
+        default controller factory will properly (attempt to!) resolve all controllers not registered with Spring.NET
+        using its default controller resolution behavoir-->
+  <!--<object type="Spring.MvcQuickStart.Controllers.AccountController, Spring.MvcQuickStart" singleton="false" />-->
+</objects>

@@ -2,6 +2,7 @@
 
 namespace ATB.RPO.NHibernateStudy.Models.Domain.Market.Entities
 {
+    // Заказ магазина
     public class ShopOrder: DocumentWithVersion
     {
         public virtual Guid ContragentID { get; set; }

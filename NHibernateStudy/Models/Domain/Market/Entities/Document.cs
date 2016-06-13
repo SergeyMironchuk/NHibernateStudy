@@ -2,6 +2,7 @@
 
 namespace ATB.RPO.NHibernateStudy.Models.Domain.Market.Entities
 {
+    //  Документ
     public class Document
     {
         public virtual Guid DocID { get; set; }
